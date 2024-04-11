@@ -2,8 +2,8 @@ from typing import Set, Optional
 from printy import inputy, printy
 from datetime import datetime
 from .persona import Persona
-from .tecnico import Tecnico
 from .usuario import Usuario
+from .tecnico import Tecnico
 
 from .consts import *
 
@@ -340,3 +340,4 @@ class SolicitudServicio:
     def ver_objetos(cls):
         """imprime en pantalla el diccionario de objetos"""
         printy(cls.objects)
+        

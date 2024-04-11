@@ -1,7 +1,7 @@
 from .persona import Persona
+from .servicio import SolicitudServicio
 from .tecnico import Tecnico
 from .usuario import Usuario
-from .servicio  import SolicitudServicio
 
 def inicializar():
     """

@@ -1,3 +1,4 @@
+from typing import Set, Optional
 from printy import inputy, printy
 from datetime import datetime
 from .persona import Persona
@@ -27,7 +28,7 @@ class Tecnico(Persona):
         # no por el usuario.
         disponible: bool = True,
     ) -> None:
-        super().__init__(identificacion, nombre, apellido, correo, telefono, ciudad, experiencia, especialidad)
+        super().__init__(identificacion, nombre, apellido, correo, telefono, ciudad)
 
         self.disponible = disponible
         self.experiencia = experiencia

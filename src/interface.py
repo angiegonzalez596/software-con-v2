@@ -4,9 +4,10 @@ Menus for the interface
 
 from printy import inputy
 from .persona import Persona
+from .servicio import SolicitudServicio
 from .tecnico import Tecnico
 from .usuario import Usuario
-from .servicio import SolicitudServicio
+
 
 def menu_usuario():
     """Muestra opciones de menu para administrar usuarios"""

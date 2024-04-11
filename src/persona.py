@@ -1,3 +1,4 @@
+from typing import Set, Optional
 from printy import inputy, printy
 from datetime import datetime
 
@@ -217,4 +218,3 @@ class Persona:
             )
             if intentar_de_nuevo:
                 cls.actualizar()
-
