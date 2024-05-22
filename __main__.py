@@ -1,7 +1,7 @@
 from printy import printy
 
 from .src.initialize import inicializar
-from .src.interface import menu_principal
+from .src.menu import menu_principal
 
 
 inicializar()

@@ -2,6 +2,7 @@ from .persona import Persona
 from .servicio import SolicitudServicio
 from .tecnico import Tecnico
 from .usuario import Usuario
+from abc import ABC, abstractmethod
 
 def inicializar():
     """
@@ -10,6 +11,7 @@ def inicializar():
     qué empezar una demostración del software.
     """
     # Primero Creamos unos cuantos usuarios
+    
     usuario_1 = Usuario(
         identificacion=12345,
         nombre="Juan",

@@ -1,10 +1,32 @@
 from typing import Set, Optional
 from printy import inputy, printy
 from datetime import datetime
-
+from abc import ABC,abstractmethod
 from .consts import *
 
-class Persona:
+class i_persona(ABC):
+    
+    @abstractmethod
+    def obtener_data(cls):
+        pass
+    
+    @abstractmethod
+    def crear(cls):
+        pass
+
+    @abstractmethod
+    def consultar(cls) -> str:
+        pass
+
+    @abstractmethod
+    def eliminar(cls) -> str:
+        pass
+
+    @abstractmethod
+    def actualizar(cls) -> str:
+        pass
+
+class Persona(i_persona):
     """
     Clase abstracta de la cual heredarán Usuario y Tecnico,
     incluye algunos métodos base.
@@ -86,6 +108,9 @@ class Persona:
     @staticmethod
     def solicitar_ciudad():
         return inputy("Ingrese la ciudad: ", QUESTION_COLOR)
+    
+    
+
 
     @classmethod
     def obtener_data(cls):
